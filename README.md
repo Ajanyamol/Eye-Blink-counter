@@ -1,41 +1,40 @@
-# Eye Blink Counter (Useless but Fun!)
+# Eye Blink Counter
+## Team Name: Amigos
+## Team Members:
+ * Member 1: Ajanyamol Thomas - College of Engineering Adoor
+ * Member 2: Ayisha Anuna - College of Engineering Adoor
+## Project Description
+[This project is a simple yet entertaining real-time and recorded video eye blink counter using a webcam and video files. It uses MediaPipe’s advanced facial landmark detection to track eye movements and count blinks by calculating the Eye Aspect Ratio (EAR). The program works by detecting when the eyes close and open again, incrementing the blink count accordingly]
 
-This project counts the number of times a person blinks their eyes in real-time using a webcam or in a recorded video file. It uses MediaPipe's Face Mesh to detect facial landmarks and calculates the Eye Aspect Ratio (EAR) to identify blinks.
+## The Problem (that doesn't exist)
+[no one really cares about how many times you blink your eyes]
 
----
+## The Solution (that nobody asked for)
+[here we are, counting blinks like it’s the next big thing in tech. This project is exactly what it says on the tin: a program that counts eye blinks using your webcam or a recorded video]
 
-## Features
+## Technical Details
+### Technologies/Components Used
+#### For Software:
 
-- Real-time blink detection using your webcam
-- Blink detection on recorded video files
-- Visualizes facial landmarks on the video feed
-- Displays blink count live on the screen
+Language used : python
+Libraries used : 
+* MediaPipe :A cross-platform framework by Google for building multimodal (video, audio, etc.) applied ML pipelines.Provides ready-to-use solutions like Face Mesh, which detects detailed facial landmarks in real-time, allowing accurate eye tracking and blink detection.
+* OpenCV (Open Source Computer Vision Library):A powerful library for real-time computer vision and image processing tasks.Used here to capture video from your webcam or read video files, display the video frames, and draw landmarks on the frames.
+* NumPy:A fundamental package for scientific computing in Python.Used for numerical operations such as calculating Euclidean distances needed for the Eye Aspect Ratio (EAR) calculation
+## Implementation
+### For Software:
+### Installation
 
----
+Follow these steps to set up the project on your local machine:
 
-## Why This Project?
+1. **Install Python 3.7 or higher**  
+   Download and install from [python.org](https://www.python.org/downloads/).
 
-While the practical use of counting blinks might be limited, this project demonstrates the power of computer vision and facial landmark detection with modern AI frameworks. It’s a fun and educational way to get hands-on experience with:
+2. **Clone or download this repository**  
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
 
-- Python programming
-- MediaPipe Face Mesh for facial landmark detection
-- OpenCV for video processing
-- NumPy for numerical computations
 
----
-
-## Requirements
-
-- Python 3.7 or above
-- Libraries:
-  - mediapipe
-  - opencv-python
-  - numpy
-
-You can install the required packages with:
-
-```bash```
-pip install mediapipe opencv-python numpy
-
-# Screenrecord  
-
+### Run:
+python blink_counter.py
